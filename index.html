@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- To look good on all devices  -->
+    <title> My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <!--import google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!--To use Font Awesome 5-->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- For drop down activation in navbar -->
+    <script src="index.js" defer></script>
+    <!-- For sticky navbar -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- using icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar" id = "navbar">
+        <div class="heading"><a href="#">Portfolio</a></div>
+        <a href="#" class="toggle">
+            <span class="bars"></span>
+            <span class="bars"></span>
+            <span class="bars"></span>
+        </a>
+        <div class="topbar">
+            <ul class="links">
+                <li><a href="#homePage">Home</a></li>
+                <li><a href="#aboutPage">About</a></li>
+                <li><a href="#skillPage">Skills</a></li>
+                <li><a href="#projectPage">Projects</a></li>
+                <li><a href="#contactPage">Contact</a></li>
+                <li><a class="resume" href="#">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Animated background -->
+    <div class="backgroundImage">
+        <ul class="childList">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- Code for home page -->
+    <section class="homePage" id="homePage">
+        <div class="main">
+            <div class="homeData">
+                <div class="intro1">Hello, my name is</div>
+                <div class="intro2">Simardeep Singh</div>
+                <div class="intro3">And I'm a <span>Software Developer</span></div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Code for About Section -->
+    <div id="aboutPage"></div>
+    <section class="aboutPage" >
+        <h2 class="aboutMe">About Me</h2>
+        <div class="aboutData">
+            <div class="subText">I'm Simar and I'm a <span>Software Developer</span></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus commodi dolorum quae dolores
+                laboriosam? Labore dignissimos, tenetur id culpa eius veniam, totam rerum nobis ducimus est repellendus
+                nostrum voluptatibus facilis.</p>
+            <a href="#">Download CV</a>
+        </div>
+    </section>
+    <br>
+    <!-- Code for Skills Section -->
+    <div id="skillPage"></div>
+    <section class="skillPage">
+        <h2 class="skill">My Skills</h2>
+        <div class="skillBtn">
+            <button class="btn1">Java</button>
+            <button class="btn2">HTML</button>
+            <button class="btn3">CCS</button>
+            <button class="btn4">C</button>
+            <button class="btn5">Python</button>
+            <button class="btn6">MySQL</button>
+        </div>
+    </section>
+    <br>
+    <!-- Code for Projects Section -->
+    <div id = "projectPage"></div>
+    <section class="projectPage">
+        <h2 class="project">Projects</h2>
+        <div class="projectList">
+            <div class="projectOne">
+                <div class="heading1">1. COVID-19 Data Analyzer</div>
+                <div class="subParts1"><span>School Data</span></div>
+                <p>Given COVID-19 data, the program will process, analyze, and plot, based on user input from a
+                    graphical user interface</p>
+                
+                <div class="projectImages imgFade ">
+                    <img src="covidgraph.png" alt="covid">
+                    <div class="description">Home Page (1 / 6)</div>
+                </div>
+                <div class="projectImages imgFade">
+                <img src="covid1.png" alt="covid">
+                <div class="description">Buy Page (2 / 6)</div>
+                </div>
+            
+                <div class="projectImages imgFade">
+                <img src="covid2.png" alt="covid">
+                <div class="description">Sell Page (3 / 6)</div>
+                </div>
+                <div class="projectImages imgFade">
+                <img src="covid3.png" alt="covid">
+                <div class="description">Update Page (4 / 6)</div>
+                </div>
+                <div class="projectImages imgFade">
+                <img src="covid4.png" alt="covid">
+                <div class="description">Gain Page (5 / 6)</div>
+                </div>
+            
+                <div class="projectImages imgFade">
+                <img src="covid5.png" alt="covid">
+                <div class="description">Search Page (6 / 6)</div>
+                </div>
+                <!-- Dots -->
+                <div style="text-align:center">
+                    <span class="dots" onclick="currentSlide1(1)"></span>
+                    <span class="dots" onclick="currentSlide1(2)"></span>
+                    <span class="dots" onclick="currentSlide1(3)"></span>
+                    <span class="dots" onclick="currentSlide1(4)"></span>
+                    <span class="dots" onclick="currentSlide1(5)"></span>
+                    <span class="dots" onclick="currentSlide1(6)"></span>
+                </div>
+            </div>
+            <div class="projectTwo">
+                <div class="heading2">2. Investment Manager</div>
+                <div class="subParts2"><span>Stocks</span></div>
+                <p>GUI program to buy, sell, update, get total gain(profit) and search the investments.</p>
+                
+                <div class="projectImage imgFade ">
+                <img src="GUI1.png" alt="Java GUI">
+                <div class="description">Home Page (1 / 6)</div>
+                </div>
+                <div class="projectImage imgFade">
+                <img src="GUI2.png" alt="Java GUI">
+                <div class="description">Buy Page (2 / 6)</div>
+                </div>
+            
+                <div class="projectImage imgFade">
+                <div class="imgCount">3 / 6</div>
+                <img src="GUI3.png" alt="Java GUI">
+                <div class="description">Sell Page (3 / 6)</div>
+                </div>
+                <div class="projectImage imgFade">
+                <img src="GUI4.png" alt="Java GUI">
+                <div class="description">Update Page (4 / 6)</div>
+                </div>
+                <div class="projectImage imgFade">
+                <img src="GUI5.png" alt="Java GUI">
+                <div class="description">Gain Page (5 / 6)</div>
+                </div>
+            
+                <div class="projectImage imgFade">
+                <img src="GUI6.png" alt="Java GUI">
+                <div class="description">Search Page (6 / 6)</div>
+                </div>
+
+                <!-- Dots -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <div id="contactPage"></div>
+    <!-- Code for Contact Section -->
+    <section class="contactPage" >
+            <h2 class="contactMe">Contact me</h2>
+            <div class="contactInfo">
+                <div class="left Side">
+                    <div class="sentence">Get in Touch</div>
+                    <p>You can contact me direclty from the webite using the given form or use other methods given</p>
+                    <div class="img">
+                        <div class="line">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="upper">Name</div>
+                                <div class="sub-title">Simardeep Singh</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="upper">Address</div>
+                                <div class="sub-title">Unit 43 Gordon Street, Guelph ON N1G4X9</div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="upper">Email</div>
+                                <div class="sub-title">simardeepsingh@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right Side">
+                    <div class="sentence">Message me</div>
+                    <form action="https://formsubmit.co/simardeepsingh710@gmail.com" method="POST">
+                        <div class="fields">
+                            <div class="name Field">
+                                <input type="text" placeholder="Name" required="">
+                            </div>
+                            <div class="email Field">
+                                <input type="email" placeholder="Email Address" required="">
+                            </div>
+                        </div>
+                        <div class="subject Field">
+                            <input type="text" placeholder="Subject" required="">
+                        </div>
+                        <div class="msg Fields">
+                            <textarea cols="30" rows="10" placeholder="Write Message..." required=""></textarea>
+                        </div>
+                        <div class="send">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <div class="scroll-up-btn show">
+        <a href="#homePage"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <footer>
+        <p>Created By Simardeep Singh | <span class="far fa-copyright"></span> 2022 All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
