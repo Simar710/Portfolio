@@ -495,8 +495,8 @@ section .project::after {
     margin: 30px 20%;
     border: 1px solid #BAC7CE;
 }
-.projectOne i,
-.projectTwo i{
+.projectOne .logo i,
+.projectTwo .logo i{
     color: #304145;
     position: relative;
     font-size: 30px;
